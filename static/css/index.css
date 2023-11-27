@@ -75,7 +75,13 @@ body {
   text-decoration: underline;
 }
 
+/* 
 .author-block {
+  display: inline-block;
+} */
+
+.author-block {
+  font-size: 16px;
   display: inline-block;
 }
 

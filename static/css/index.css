@@ -152,6 +152,10 @@ b {
   text-align: center;
 }
 
+.subtitle {
+  text-align: left;
+}
+
 .posts {
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;

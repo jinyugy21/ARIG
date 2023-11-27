@@ -82,7 +82,6 @@ body {
 
 .author-block {
   font-size: 16px;
-  display: inline-block;
 }
 
 .publication-banner img {}
@@ -208,10 +207,10 @@ a:after {
     /*rgba(225, 166, 121, 0.0);*/
 }
 
-a:hover {
+/* a:hover {
   color: rgb(93, 70, 70);
   text-decoration: none;
-}
+} */
 
 a:hover:after {
   color: black;

@@ -142,7 +142,6 @@ body {
   /*background-color: rgb(43, 60, 197);*/
   /*color: rgb(0, 79, 241);*/
   /*color: white;*/
-  border-top: 5px solid rgb(255, 180, 240);
   /*border-bottom:5px solid orange;*/
 }
 
@@ -202,7 +201,6 @@ a:after {
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
   /*background-color: rgba(225, 166, 121, 0.5);*/
-  background-color: rgba(255, 211, 30, 0.4);
 }
 
 .emojilink:after {

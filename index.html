@@ -193,8 +193,8 @@
   <!-- End teaser video -->
 
   <!-- Teaser video-->
-  <!-- <section class="hero teaser"> -->
-  <section class="hero is-small is-light">
+  <section class="hero teaser">
+    <!-- <section class="hero is-small is-light"> -->
     <div class="container is-max-desktop">
       <h2 class="title is-3">Pipeline</h2>
       <div class="hero-body">
@@ -284,9 +284,9 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <small>
-              <h4 class="subtitle" style="text-align: left;">
-                <!-- <h6 class="subtitle"> -->
-                <!-- <p> -->
+              <!-- <h4 class="subtitle" style="text-align: left;"> -->
+              <!-- <h6 class="subtitle"> -->
+              <p style="text-align: left;">
                 As shown in Video4, without SDP module, the model can only generate constant motions (always
                 smile in this
                 scenario). After incorporating SDP module, the generated listener motions can not only fluctuate
@@ -295,8 +295,8 @@
                 also achieve
                 progressive motion
                 changes.
-                <!-- </p> -->
-              </h4>
+              </p>
+              <!-- </h4> -->
             </small>
             <video controls="" width="80%" height="80%">
               <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
@@ -315,24 +315,24 @@
       <div class="container">
         <!-- Paper video. -->
         <h2 class="title is-3"><strong>Video5</strong>: Ablation on PGM module </h2>
-        <!-- <div class="columns is-centered has-text-centered"> -->
-        <div class="column is-four-fifths">
-          <!-- <h4 class="subtitle" style="text-align: left;"> -->
-          <!-- <h6 class="subtitle"> -->
-          <p>
-            As shown in Video5, our proposed PGM module has two benefits: Firstly, with PGM module, the
-            generated
-            listener motions will be more coherent between adjacent segments. Furthermore, the PGM module
-            can also
-            help maintain past behavioral habits (e.g. frowning in the last sample of Video5).
-            <!-- </h6> -->
-          </p>
-          <video controls="" width="80%" height="80%">
-            <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
-            <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
-            <source src="static/videos/Ablation_on_PGM.mp4" type="video/mp4">
-          </video>
-          <!-- </div> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <!-- <h4 class="subtitle" style="text-align: left;"> -->
+            <!-- <h6 class="subtitle"> -->
+            <p style="text-align: left;">
+              As shown in Video5, our proposed PGM module has two benefits: Firstly, with PGM module, the
+              generated
+              listener motions will be more coherent between adjacent segments. Furthermore, the PGM module
+              can also
+              help maintain past behavioral habits (e.g. frowning in the last sample of Video5).
+              <!-- </h6> -->
+            </p>
+            <video controls="" width="80%" height="80%">
+              <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+              <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
+              <source src="static/videos/Ablation_on_PGM.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>

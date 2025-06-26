@@ -126,24 +126,7 @@
           <h2 class="title is-3">Abstract</h3>
             <div class="content has-text-justified">
               <p>
-                Listening head generation aims to synthesize a non-verbal responsive listener head by modeling the
-                correlation between the speaker and the listener in dynamic conversion.
-                The applications of listener agent generation in virtual interaction have promoted many works achieving
-                the diverse and fine-grained motion generation.
-                However, they can only manipulate motions through simple emotional labels, but cannot freely control the
-                listener's motions.
-                Since listener agents should have human-like attributes (e.g. identity, personality) which can be freely
-                customized by users, this limits their realism.
-                In this paper, we propose a user-friendly framework called CustomListener to realize the free-form text
-                prior guided listener generation. To achieve speaker-listener coordination, we design a Static to
-                Dynamic Portrait module (SDP), which interacts with speaker information to transform static text into
-                dynamic portrait token with completion rhythm and amplitude information.
-                To achieve coherence between segments, we design a Past Guided Generation Module (PGG) to maintain the
-                consistency of customized listener attributes through the motion prior, and utilize a diffusion-based
-                structure conditioned on the portrait token and the motion prior to realize the controllable generation.
-                To train and evaluate our model, we have constructed two text-annotated listening head datasets based on
-                ViCo and RealTalk, which provide text-video paired labels. Extensive experiments have verified the
-                effectiveness of our model.
+                Face-to-face communication, as a common human activity, motivates the research on interactive head generation. A virtual agent can generate motion responses with both listening and speaking capabilities based on the audio or motion signals of the other user and itself. However, previous clip-wise generation paradigm or explicit listener/speaker generator-switching methods have limitations in future signal acquisition, contextual behavioral understanding, and switching smoothness, making it challenging to be real-time and realistic. In this paper, we propose an autoregressive (AR) based frame-wise framework called ARIG to realize the real-time generation with better interaction realism. To achieve real-time generation, we model motion prediction as a non-vector-quantized AR process. Unlike discrete codebook-index prediction, we represent motion distribution using diffusion procedure, achieving more accurate predictions in continuous space. To improve interaction realism, we emphasize interactive behavior understanding (IBU) and detailed conversational state understanding (CSU). In IBU, based on dual-track dual-modal signals, we summarize short-range behaviors through bidirectional-integrated learning and perform contextual understanding over long ranges. In CSU, we use voice activity signals and context features of IBU to understand the various states (interruption, feedback, pause, etc.) that exist in actual conversations. These serve as conditions for the final progressive motion prediction. Extensive experiments have verified the effectiveness of our model.
               </p>
             </div>
         </div>
@@ -171,7 +154,7 @@
   <!-- Teaser video-->
   <section class="hero teaser">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Overview</h2>
+      <h2 class="title is-3">Pipeline</h2>
       <div class="hero-body">
         <!-- <h6 class="subtitle"> -->
         <!-- <div class="content has-text-justified"> -->
@@ -192,7 +175,7 @@
   <section class="hero teaser">
     <!-- <section class="hero is-small is-light"> -->
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Pipeline</h2>
+      <h2 class="title is-3">Model can process complex conversional states</h2>
       <div class="hero-body">
         <!-- <h6 class="subtitle"> -->
         <!-- <div class="content has-text-justified"> -->
@@ -223,7 +206,12 @@
             <video controls="" width="80%" height="80%">
               <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
               <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
-              <source src="static/videos/main_visual_result.mp4" type="video/mp4">
+              <source src="static/videos/1-small.mp4" type="video/mp4">
+            </video>
+            <video controls="" width="80%" height="80%">
+              <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+              <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
+              <source src="static/videos/2-small.mp4" type="video/mp4">
             </video>
           </div>
         </div>

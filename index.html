@@ -158,10 +158,6 @@
       <div class="hero-body">
         <!-- <h6 class="subtitle"> -->
         <!-- <div class="content has-text-justified"> -->
-        <p>
-          Given user-customized texts, a speaker video, and a listener portrait image, our system can generate a
-          listener video with natural facial motions (pose, expression).
-        </p>
         <!-- </h6> -->
         <div style="text-align:center;">
           <img width="70%" height="70%" src="static/images/pip7.png">
@@ -171,23 +167,24 @@
   </section>
   <!-- End teaser video -->
 
-  <!-- Teaser video-->
   <section class="hero teaser">
-    <!-- <section class="hero is-small is-light"> -->
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Model can process complex conversional states</h2>
+      <h2 class="title is-3">Agent’s conversational state</h2>
       <div class="hero-body">
         <!-- <h6 class="subtitle"> -->
         <!-- <div class="content has-text-justified"> -->
+        <p>
+          In addition to regular speaking/listening, it also includes many complex states, like interrupt, pause, feedback.
+        </p>
         <!-- </h6> -->
         <div style="text-align:center;">
-          <img src="static/images/state6.png">
+          <img width="70%" height="70%" src="static/images/state6.png">
         </div>
       </div>
     </div>
   </section>
   <!-- End teaser video -->
-
+  
 
   <!-- Youtube video -->
   <section class="hero is-small is-light">
@@ -274,14 +271,16 @@
     <div class="hero-body">
       <div class="container">
         <!-- Paper video. -->
-        <h2 class="title is-3"><strong>Video2</strong>: Comparisons on the ViCo Dataset </h2>
+        <h2 class="title is-3"><strong>Video3</strong>: Comparisons with SOTA </h2>
         <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-
-            <video controls="" width="80%" height="80%">
-              <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
-              <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
-              <source src="static/videos/comparisons_on_ViCo.mp4" type="video/mp4">
+          <div class="column is-half">
+            <video controls width="100%">
+              <source src="static/videos/compareSOTA-small-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-half">
+            <video controls width="100%">
+              <source src="static/videos/compareSOTA-small-2.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -294,48 +293,34 @@
     <div class="hero-body">
       <div class="container">
         <!-- Paper video. -->
-        <h2 class="title is-3"><strong>Video3</strong>: Comparisons on the RealTalk Dataset </h2>
+        <h2 class="title is-3"><strong>Video4</strong>: Comparisons on Talking </h2>
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
 
-            <video controls="" width="80%" height="80%">
+            <video controls="" width="50%" height="50%">
               <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
               <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
-              <source src="static/videos/comparisons_on_RealTalk.mp4" type="video/mp4">
+              <source src="static/videos/compareTalk-small.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Youtube video -->
   <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
         <!-- Paper video. -->
-        <h2 class="title is-3"><strong>Video4</strong>: Ablation on SDP module </h2>
+        <h2 class="title is-3"><strong>Video5</strong>: Comparisons on Listening </h2>
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <small>
-              <!-- <h4 class="subtitle" style="text-align: left;"> -->
-              <!-- <h6 class="subtitle"> -->
-              <p style="text-align: left;">
-                As shown in Video4, without SDP module, the model can only generate constant motions (always
-                smile in this
-                scenario). After incorporating SDP module, the generated listener motions can not only fluctuate
-                with the
-                speaker's semantics and movement amplitude (i.e. enhanced speaker-listener coordination), but
-                also achieve
-                progressive motion
-                changes.
-              </p>
-              <!-- </h4> -->
-            </small>
-            <video controls="" width="80%" height="80%">
+
+            <video controls="" width="50%" height="50%">
               <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
               <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
-              <source src="static/videos/Ablation_on_SDP.mp4" type="video/mp4">
+              <source src="static/videos/compareListen-small.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -343,36 +328,8 @@
     </div>
   </section>
 
-  <!-- Youtube video -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <!-- Paper video. -->
-        <h2 class="title is-3"><strong>Video5</strong>: Ablation on PGM module </h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <!-- <h4 class="subtitle" style="text-align: left;"> -->
-            <!-- <h6 class="subtitle"> -->
-            <p style="text-align: left;">
-              As shown in Video5, our proposed PGM module has two benefits: Firstly, with PGM module, the
-              generated
-              listener motions will be more coherent between adjacent segments. Furthermore, the PGM module
-              can also
-              help maintain past behavioral habits (e.g. frowning in the last sample of Video5).
-              <!-- </h6> -->
-            </p>
-            <video controls="" width="80%" height="80%">
-              <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
-              <!-- <source src="https://github.com/sadtalker/sadtalker.github.io/blob/main/static/videos/talking.mp4?raw=true" type="video/mp4"> -->
-              <source src="static/videos/Ablation_on_PGM.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
+  
+  
   <!-- BibTex citation -->
   <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
